@@ -817,8 +817,8 @@ service_box .img-box {
 }
 
 .service_box .img-box img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 150%;
+  max-height: 150%;
   object-fit: contain; /* Ensures the entire image is visible */
   object-position: center; /* Centers the image */
 }
