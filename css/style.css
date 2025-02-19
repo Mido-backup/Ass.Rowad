@@ -351,37 +351,43 @@ a:focus {
       flex-wrap: wrap;
 }
 
+.service_box {
+  flex: 1 1 30%; 
+  margin: 15px; 
+  text-align: center; 
+}
+
 .service_box .img-box {
   width: 100%;
-  height: 200px; /* Fixed height for consistency */
+  height: 200px;
   overflow: hidden;
   border-radius: 18px;
-  background-color: #f0f0f0; /* Neutral background color */
+  background-color: #f0f0f0;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative; /* Ensure child img positioning is unaffected */
+  position: relative;
 }
 
 .service_box .img-box img {
   width: auto;
   height: 100%;
   max-width: none;
-  object-fit: contain; /* Keeps the entire image visible without distortion */
-  object-position: center; /* Centers the image */
+  object-fit: contain;
+  object-position: center;
 }
 
-.service_container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .service_box {
+      flex: 1 1 100%;
+  }
+
+  .service_box .img-box {
+    height: 150px;
+  }
 }
 
-.service_box {
-  flex: 1 1 30%; 
-  margin: 15px; 
-  text-align: center; 
-}
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
