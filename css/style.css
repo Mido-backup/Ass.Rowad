@@ -351,43 +351,30 @@ a:focus {
       flex-wrap: wrap;
 }
 
+.service_box .img-box {
+  width: 100%;
+  height: 200px; /* Set a fixed height for all images */
+  overflow: hidden;
+  border-radius: 18px; /* Maintain the border radius */
+}
+
+.service_box .img-box img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+}
+
+.service_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .service_box {
   flex: 1 1 30%; 
   margin: 15px; 
   text-align: center; 
 }
-
-.service_box .img-box {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 18px;
-  background-color: #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.service_box .img-box img {
-  width: auto;
-  height: 100%;
-  max-width: none;
-  object-fit: contain;
-  object-position: center;
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-  .service_box {
-      flex: 1 1 100%;
-  }
-
-  .service_box .img-box {
-    height: 150px;
-  }
-}
-
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
@@ -755,134 +742,4 @@ a:focus {
 }
 
 /* end footer section*/
-
-/* Mobile Responsive Adjustments */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px; /* Smaller font size for better readability */
-  }
-
-  .layout_padding, .layout_padding2, .layout_padding2-top, .layout_padding2-bottom, .layout_padding-top, .layout_padding-bottom {
-    padding: 20px 0; /* Reduce padding for smaller screens */
-  }
-
-  .custom_heading-container h2 {
-    font-size: 24px; /* Smaller heading size */
-  }
-
-  .hero_area {
-    height: auto; /* Adjust height for smaller screens */
-    padding: 20px 0;
-  }
-
-  .hero_area::before {
-    display: none; /* Hide background image on smaller screens */
-  }
-
-  .header_section .nav_container {
-    padding: 10px 0; /* Reduce padding */
-  }
-
-  .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
-    padding: 10px 15px; /* Reduce padding for nav links */
-    font-size: 14px; /* Smaller font size */
-  }
-
-  .navbar-brand span {
-    font-size: 18px; /* Smaller brand name */
-  }
-
-  .slider_section {
-    height: auto; /* Adjust height for smaller screens */
-    padding: 20px 0;
-  }
-
-  .slider_detail-box h1 {
-    font-size: 28px; /* Smaller heading size */
-    margin-bottom: 15px;
-  }
-
-  .slider_detail-box .btn-box a {
-    padding: 10px 30px; /* Smaller button size */
-    margin: 20px 0;
-  }
-
-  .slider_img-box {
-    width: 100%; /* Full width for images */
-  }
-
-  .service_section {
-    padding-top: 100px; /* Reduce padding */
-    padding-bottom: 50px;
-    margin-top: -50px; /* Adjust margin */
-  }
-
-service_box .img-box {
-  width: 100%;
-  height: 200px; /* Fixed height for consistency */
-  overflow: hidden;
-  border-radius: 18px;
-  position: relative;
-  background-color: #f0f0f0; /* Add a neutral background color */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.service_box .img-box img {
-  max-width: 150%;
-  max-height: 150%;
-  object-fit: contain; /* Ensures the entire image is visible */
-  object-position: center; /* Centers the image */
-}
-
-/* Prevent excessive zooming on mobile */
-@media (max-width: 768px) {
-  .service_box .img-box {
-    height: 150px; /* Adjust height for smaller screens */
-  }
-
-  .service_box .img-box img {
-    object-fit: contain; /* Ensures the entire image is visible without cropping */
-  }
-}
-
-  .contact_section .contact_heading h2 {
-    font-size: 24px; /* Smaller heading size */
-  }
-
-  .contact_section form .form-control {
-    height: 40px; /* Smaller input height */
-  }
-
-  .contact_section form .form-control#inputMessage {
-    height: 100px; /* Smaller textarea height */
-  }
-
-  .contact_section button {
-    padding: 10px 30px; /* Smaller button size */
-    font-size: 14px; /* Smaller font size */
-  }
-
-  .footer_bg {
-    padding-top: 100px; /* Reduce padding */
-    margin-top: -50px; /* Adjust margin */
-  }
-
-  .info_section h3 {
-    font-size: 20px; /* Smaller heading size */
-  }
-
-  .info_section .form_container input {
-    width: 100%; /* Full width for input */
-    margin-left: 0; /* Remove margin */
-  }
-
-  .info_section .form_container button {
-    padding: 8px 30px; /* Smaller button size */
-  }
-
-  .footer_section p {
-    padding: 10px 5%; /* Reduce padding */
-  }
-}
+/*# sourceMappingURL=style.css.map */
